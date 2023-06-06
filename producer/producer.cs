@@ -40,6 +40,8 @@ class Producer {
                             numProduced += 1;
                         }
                     });
+              Console.WriteLine($"Sleep for 60 seconds");
+              System.Threading.Thread.Sleep(TimeSpan.FromSeconds(60));
             }
 
             producer.Flush(TimeSpan.FromSeconds(10));
